@@ -6,7 +6,7 @@ import jfasIcon, { JYfasIcon } from "./components/export.js";
 // Vue.component("jfas-icon", JYfasIcon);
 
 // Method two: use Vue.use
-Vue.use(jfasIcon);
+Vue.use(jfasIcon, { name: "jfasIcon" });
 
 Vue.config.productionTip = false;
 new Vue({

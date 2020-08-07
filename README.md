@@ -14,7 +14,10 @@
 
 ```
 import Vue from 'vue'
-import JYicon from 'vue-fas-icon'
-Vue.component('jfa-icon', JYicon)
+import JYIcon from 'vue-fas-icon'
+Vue.use(JYIcon)
+
+<!-- html -->
+<jfas-icon :icon="['fas', ]" @click="copyIcon(index)" />
 
 ```

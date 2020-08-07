@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["jfasIcon"] = factory();
+	else
+		root["jfasIcon"] = factory();
+})((typeof self !== 'undefined' ? self : this), function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -10760,4 +10769,5 @@ module.exports = NATIVE_SYMBOL
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-fas-icon.common.js.map
+});
+//# sourceMappingURL=jfasIcon.umd.js.map

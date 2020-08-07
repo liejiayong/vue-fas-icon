@@ -1,7 +1,7 @@
 {
   "name": "vue-fas-icon",
   "author": "liejiayong <809206619@qq.com>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/liejiayong/vue-fas-icon",
   "main": "src/components/export.js",
   "repository": {
@@ -11,20 +11,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --inline-vue",
-    "build:lib": "vue-cli-service build --target lib src/components/export.js",
+    "build:lib": "vue-cli-service build --name jfasIcon --target lib src/components/export.js",
     "lint": "vue-cli-service lint",
     "update": "ncu -u",
     "push": "start ./deploy.sh"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/vue-fontawesome": "^0.1.9",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "zx-rely": "^0.0.8"
+    "@fortawesome/vue-fontawesome": "^0.1.9"
   },
   "devDependencies": {
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "^4.4.1",
     "@vue/cli-plugin-eslint": "^4.4.1",
     "@vue/cli-service": "^4.4.1",
@@ -39,5 +38,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/liejiayong/vue-fas-icon/issues"
+  }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="liejiayong" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue-fas-icon</title>
+  <script crossorigin="anonymous" integrity="sha384-OZmxTjkv7EQo5XDMPAmIkkvywVeXw59YyYh6zq8UKfkbor13jS+5p8qMTBSA1q+F" src="https://lib.baomitu.com/vue/2.6.11/vue.min.js"></script>
+  <script src="../dist/jfasIcon.umd.min.js"></script>
+  <style>
+    .svg-inline--fa{
+      font-size: 36px;
+      color:red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app">
+    <jfas-icon :icon="['fas', 'grin-wink']" />
+  </div>
+
+  <script>
+    Vue.use(jfasIcon)
+    new Vue().$mount('#app')
+  </script>
+
+</body>
+
+</html>
